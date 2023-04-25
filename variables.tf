@@ -21,11 +21,7 @@ variable "security_group_name" {
     description = "SG_NAME"
   
 }
- variable "security_description" {
-    type = string
-    description = "SG Description"
- }
-
+ 
  variable "security_group_inbound_rules" {
     type = list(object({
     from_port = number 
