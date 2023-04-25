@@ -16,25 +16,3 @@ variable "ami_id" {
     type = map(string)
     description = "Tags"
  }
-variable "security_group_name" {
-    type = string 
-    description = "SG_NAME"
-  
-}
- 
- variable "security_group_inbound_rules" {
-    type = list(object({
-    from_port = number 
-    to_port = number 
-    description = string 
-    protocol = string 
-    cidrblocks = list(string)
-    }))
-    description = "security group inbound rules"
- }
-
- variable "sg_tag" {
-    type = map(string)
-    description = "Security group tag"
-   
- }
